@@ -6,10 +6,10 @@
     <title>Savio's Playground</title>
     <link rel="stylesheet" href="src/styles/main.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    
 
 </head>
-<body>
-    <div id="top"></div>
+<body id="top">
     <div id="popup-banner" class="popup-banner" style="display: none;">
         <div class="popup-content">
             <h3>Welcome to My Playground!</h3>
@@ -64,19 +64,33 @@
     </nav> -->
     
     <section id="introduction" class="scroll-mt-24">
-        <h2>About Me</h2>
-        <p style="text-align: justify;">Hello! I am a collaborative and results-oriented digital marketer with a strong technical foundation. Thriving in fast-paced environments, I utilize my knowledge in SEO, content creation, and web development to drive impactful results. A lifelong learner passionate about staying ahead of industry trends, I seek to contribute to a team that values innovation and continuous improvement.</p>
+        <h2 class="text-slate-900 text-2xl font-semibold">About Me</h2>
+        <p style="text-align: justify;" class="mt-4">Hello! I am a collaborative and results-oriented digital marketer with a strong technical foundation. Thriving in fast-paced environments, I utilize my knowledge in SEO, content creation, and web development to drive impactful results. A lifelong learner passionate about staying ahead of industry trends, I seek to contribute to a team that values innovation and continuous improvement.</p>
     </section>
     
     <section id="projects" class="scroll-mt-24">
-        <h2>My Projects</h2>
-        <p>Here are some of the projects I have worked on:</p>
+        <h2 class="text-slate-900 text-2xl font-semibold">My Projects</h2>
+        <p class="mt-4">Here are some of the projects I have worked on:</p>
         <div class="projects-grid">
             <div class="project-item">
                 <img src="assets/image/email-1.png" alt="email - astro">
                 <div class="project-info">
                     <h3>Email Marketing</h3>
                     <p>Email campaign promo</p>
+                </div>
+            </div>
+            <div class="project-item">
+                <img src="assets/image/seo-article.png" alt="SEO Article">
+                <div class="project-info">
+                    <h3>SEO Article</h3>
+                    <p>Produce 1,300+ new articles</p>
+                </div>
+            </div>
+            <div class="project-item">
+                <img src="assets/image/cro-article.png" alt="SEO Article">
+                <div class="project-info">
+                    <h3>Conversion Rate Optimization</h3>
+                    <p>Optimized 500+ articles to generate new leads</p>
                 </div>
             </div>
             <div class="project-item">
@@ -107,20 +121,13 @@
                     <p>Revamp Career Page</p>
                 </div>
             </div>
-            <div class="project-item">
-                <img src="assets/image/seo-article.png" alt="SEO Article">
-                <div class="project-info">
-                    <h3>SEO Article</h3>
-                    <p>Daily SEO article to gain Leads</p>
-                </div>
-            </div>
             <!-- Add more project items as needed -->
         </div>
     </section>
     
     <section id="skills" class="scroll-mt-24">
-        <h2>Skills</h2>
-        <p>These are the skills I possess:</p>
+        <h2 class="text-slate-900 text-2xl font-semibold">Skills</h2>
+        <p class="mt-4">These are the skills I possess:</p>
         <ul class="skills-list">
             <li>Marketing Automation</li>
             <li>SEO/SEM</li>
@@ -128,15 +135,19 @@
             <li>CRM Management</li>
             <li>Content Management Systems</li>
             <li>Email Marketing (HTML &amp; CSS)</li>
+            <li>Website Creation</li>
+            <li>Project Management</li>
+            <li>Critical Thinking</li>
+            <li>Kanban</li>
         </ul>
     </section>
     
     <section id="education">
-        <h2>Education</h2>
+        <h2 class="text-slate-900 text-2xl font-semibold">Education</h2>
         <ul class="skills-list">
             <li>Bachelor of Communication Science, Universitas Multimedia Nusantara (2022)</li>
         </ul>
-        <h2>Certification & Achievements</h2>
+        <h2 class="mt-4 text-slate-900 text-2xl font-semibold">Certification & Achievements</h2>
         <ul class="skills-list">
             <li><b>Coursera</b>, Project Management (2024)</li>
             <li><b>Udemy</b>, Data Visualization with Looker Studio (2024)</li>
@@ -146,19 +157,72 @@
     </section>
     
     <section id="contact-form" class="scroll-mt-24">
-        <h2>Contact Form</h2>
-        <form id="contactForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Submit</button>
-        </form>
+        <div class="mt-6">
+            <div class="grid sm:grid-cols-2 items-start gap-12 p-8 mx-auto max-w-4xl bg-white rounded-md">
+              <div>
+                <h1 class="text-slate-900 text-3xl font-semibold">Let's Talk</h1>
+                <p class="text-sm text-slate-500 mt-4 leading-relaxed">I’m here to help turn your goals into actionable plans — let’s chat and find the right solution together.</p>
+                <div class="mt-12">
+                  <h2 class="text-slate-900 text-base font-semibold">Email</h2>
+                  <ul class="mt-4">
+                    <li class="flex items-center">
+                      <div class="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M2.038 5.61A2.01 2.01 0 0 0 2 6v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6c0-.12-.01-.238-.03-.352l-.866.65-7.89 6.032a2 2 0 0 1-2.429 0L2.884 6.288l-.846-.677Z"/>
+                            <path d="M20.677 4.117A1.996 1.996 0 0 0 20 4H4c-.225 0-.44.037-.642.105l.758.607L12 10.742 19.9 4.7l.777-.583Z"/>
+                          </svg>
+                          
+                      </div>
+                      <a href="work.dominicussavio@gmail.com" class="text-sm ml-4">
+                        <small class="block text-slate-900">Mail</small>
+                        <span class="text-blue-600 font-medium">work.dominicussavio@gmail.com</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+      
+                <div class="mt-12">
+                  <h2 class="text-slate-900 text-base font-semibold">Socials</h2>
+      
+                  <ul class="flex mt-4 space-x-4">
+                    <li class="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                      <a href="https://www.linkedin.com/in/dominicussavio">
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M12.51 8.796v1.697a3.738 3.738 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483 1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.601 1.601 0 0 1 1.6 1.606Z" clip-rule="evenodd"/>
+                            <path d="M7.2 8.809H4V19.5h3.2V8.809Z"/>
+                          </svg>                          
+                      </a>
+                    </li>
+                    <li class="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                        <a href="https://github.com/dominicussavio">
+                            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" d="M12.006 2a9.847 9.847 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.045 10.045 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.711 2.711 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.079 2.079 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.022 4.022 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.017 4.017 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.471 2.471 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.473 10.473 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.847 9.847 0 0 0 12.007 2Z" clip-rule="evenodd"/>
+                              </svg>                      
+                        </a>
+                      </li>
+                    <li class="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                      <a href="https://www.instagram.com/dominicussavio21/">
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path fill="currentColor" fill-rule="evenodd" d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z" clip-rule="evenodd"/>
+                          </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+      
+              <form class="space-y-4" action="https://formspree.io/f/xldjkgga" method="POST">
+                <input type='text' placeholder='Name'
+                  class="w-full text-slate-900 rounded-md py-2.5 px-4 border text-sm outline-none focus:border-blue-500" />
+                <input type='email' placeholder='Email'
+                  class="w-full text-slate-900 rounded-md py-2.5 px-4 border text-sm outline-none focus:border-blue-500" />
+                <textarea placeholder='Message' rows="6"
+                  class="w-full text-slate-900 rounded-md px-4 border text-sm pt-2.5 outline-none focus:border-blue-500"></textarea>
+                <button type='button'
+                  class="text-white bg-blue-500 hover:bg-blue-600 rounded-md text-[15px] font-medium px-4 py-2 w-full !mt-6">Send Message</button>
+              </form>
+            </div>
+          </div>
     </section>
 
 
@@ -166,63 +230,14 @@
     <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div class="sm:flex sm:items-center sm:justify-between">
             <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
-                <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
+                <img src="assets/image/logo.jpg" class="h-8" alt="icon-savio" />
                 <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
             </a>
-            <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
-                <li>
-                    <a href="#" class="hover:underline me-4 md:me-6">About</a>
-                </li>
-                <li>
-                    <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
-                </li>
-                <li>
-                    <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
-                </li>
-                <li>
-                    <a href="#" class="hover:underline">Contact</a>
-                </li>
-            </ul>
-        </div>
         <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.</span>
+        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 Dominicus Savio.</span>
     </div>
 </footer>
 
-
-    
-   <!-- <footer>
-        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
-        <ul>
-            <li>
-                <div class="contact-item">
-                    <a href="mailto:work.dominicussavio@gmail.com">
-                        <div class="svg-container">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="email-icon"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><!--<path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
-                        </div>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="contact-item">
-                    <a href="https://www.linkedin.com/in/dominicussavio" target="_blank">
-                        <div class="svg-container">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><!--<path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
-                        </div>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="contact-item">
-                    <a href="#" target="_blank">
-                        <div class="svg-container">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><!--<path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
-                        </div>
-                    </a>
-                </div>
-            </li>
-        </ul>
-    </footer>-->
     
     <button id="back-to-top" title="Back to top">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
