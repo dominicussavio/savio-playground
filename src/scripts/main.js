@@ -49,22 +49,45 @@
     }
 })();
 
-document.getElementById('contactForm').addEventListener('submit', function(event) {
+document.addEventListener('DOMContentLoaded', function () {
+    const toggleBtn = document.querySelector('[data-collapse-toggle="navbar-sticky"]');
+    const menu = document.getElementById('navbar-sticky');
+  
+    if (toggleBtn && menu) {
+      toggleBtn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+      });
+    } else {
+      console.warn('Navbar toggle button or menu not found.');
+    }
+  });
+  
+
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault();
-    
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-    
-    console.log('Form submitted:', { name, email, message });
-    
-    // You can add your form submission logic here, such as sending the data to a server
-    
-    alert('Thank you for your message!');
-    
-    // Clear the form
-    document.getElementById('contactForm').reset();
+
+    const form = event.target;
+    const data = new FormData(form);
+
+    fetch(form.action, {
+        method: "POST",
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+    }).then(response => {
+        if (response.ok) {
+            alert('Thank you for your message!');
+            form.reset();
+        } else {
+            alert('There was a problem submitting your form.');
+        }
+    }).catch(error => {
+        console.error('Form submission error:', error);
+        alert('Something went wrong. Please try again.');
+    });
 });
+
 
 // Smooth scrolling for navigation links
 document.querySelectorAll('nav ul li a').forEach(anchor => {
